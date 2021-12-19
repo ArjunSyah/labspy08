@@ -1,27 +1,15 @@
-# labspy08
-# praktikum 08
-# Membuat program denggan menggunakan class dan atributnya didalam python
-### Berikut flowchartnya
-![gambar1](ss/s1.jpg)
-```python
 from os import system
-```
-- diatas code untuk mengimport, untuk mendapatkan clear system, pada system os
-```python
-class mahasiswa:   
+class mahasiswa:
     nim=""
     nama=""
     tugas=""
     uts=""
     uas=""
     akhir=""
-```
-- diatas adalah code untuk membuat class, yang berfungsi untuk menampung data mahasiswa beserta atributnya
-```python
+
 pilih=0
 datasiswa=[]
-```
-- diatas adalah variable unntuk menampung list data dari object mahasiswa
+
 def menu():
     system("cls")
     print("Menu Aplikasi Data Mahasiswa");
@@ -80,9 +68,19 @@ def menu():
             menu()
     elif pilih ==5 :
         exit()
-```
-- diatas adalahprogram atau method untuk menampilkan daftar menu 
-```python
+
+def tampil():
+    system("cls")
+    print("DATA MAHASISWA")
+    for data in datasiswa:
+        print("Nim          : "+str(data.nim)) 
+        print("Nama         : "+data.nama)
+        print("Nilai Tugas  : "+str(data.tugas))
+        print("Nilai UTS    : "+str(data.uts))
+        print("Nilai UAS    : "+str(data.uas))
+        print("Nilai Akhir  : "+str(data.akhir))
+        print("-"*18)
+
 def pilih1():
     ulang = "Y"
     while ulang in("y","Y"):
@@ -98,55 +96,4 @@ def pilih1():
         datasiswa.append(siswabaru)
         ulang=input("Apakah Anda Ingin Mengulang (Y/T)? ")
 menu()
-```
-- diatas adalah program untuk menambahkan data
 
-```python
-def tampil():
-    system("cls")
-    print("DATA MAHASISWA")
-    for data in datasiswa:
-        print("Nim          : "+str(data.nim)) 
-        print("Nama         : "+data.nama)
-        print("Nilai Tugas  : "+str(data.tugas))
-        print("Nilai UTS    : "+str(data.uts))
-        print("Nilai UAS    : "+str(data.uas))
-        print("Nilai Akhir  : "+str(data.akhir))
-        print("-"*18)
-```
-- diaatas adalah code untuk menampilkan data yang sudah tersimpan, cara mengaksesnya dengan mengetikan angka 2 ditampilan menu
-
-```python
-    elif pilih ==4:
-        system("cls")
-        tampil()
-        index_update=-1
-        id_hapus = int(input("Input NIM Yang Akan Dihapus"))
-        for a in range (0, len(data)):
-            if id_hapus==datasiswa[a].nim:
-                index_delete = a
-                break
-        if(index_delete > -1):
-            del datasiswa[index_delete]
-            print("Data Telah Dihapus")
-        else: 
-            print("NIM Tidak Ditemukan")
-            input("Kembali Menu Utama")
-            menu()
-            menu()
-```
-- diatas adalah program untuk menghapus data 
-```python
-  elif pilih ==5 :
-        exit()
-```
-- diatas adalah program untuk keluar atau mengakhiri proggram
-## Berikut program ketika dijalankan
-![gambar2](ss/s2.PNG)
-- diatas adalah tampilan menu ketika program dijalankan
-![gambar3](ss/s3.PNG)
-- diatas tampilan ketika memasukan no 1, apabila kita melanjutkan y maka akan melanjutkan dan menambahkan data, sedangkan jika kita melanjutkan T maka kita akan di arahkan ke menu utama
-![gambar4](ss/s4.PNG)
-- diatas adalah tampilan, menampilkan keseluruhan data yang sudah disimpan
-
-# sekian terimakasih
