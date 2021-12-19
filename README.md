@@ -145,10 +145,13 @@ def tampil():
 ```
 - diatas adalah program untuk keluar atau mengakhiri proggram
 ## Berikut program ketika dijalankan
+
 ![gambar2](ss/s2.PNG)
 - diatas adalah tampilan menu ketika program dijalankan
+
 ![gambar3](ss/s3.PNG)
 - diatas tampilan ketika memasukan no 1, apabila kita melanjutkan y maka akan melanjutkan dan menambahkan data, sedangkan jika kita melanjutkan T maka kita akan di arahkan ke menu utama
+
 ![gambar4](ss/s4.PNG)
 - diatas adalah tampilan, menampilkan keseluruhan data yang sudah disimpan
 
