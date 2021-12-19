@@ -17,11 +17,14 @@ class mahasiswa:
     akhir=""
 ```
 - diatas adalah code untuk membuat class, yang berfungsi untuk menampung data mahasiswa beserta atributnya
+
 ```python
 pilih=0
 datasiswa=[]
 ```
 - diatas adalah variable unntuk menampung list data dari object mahasiswa
+
+```python
 def menu():
     system("cls")
     print("Menu Aplikasi Data Mahasiswa");
